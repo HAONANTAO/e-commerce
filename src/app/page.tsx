@@ -4,6 +4,7 @@ import Image from "next/image";
 import FiveStars from "@/components/FiveStars";
 import UserImages from "@/components/UserImages";
 import Dotpoints from "@/components/Dotpoints";
+import Phone from "@/components/Phone";
 export default function Home() {
   return (
     <>
@@ -44,12 +45,21 @@ export default function Home() {
                 {/* negative x space   */}
                <UserImages/>
                 <div className="flex flex-col justify-between items-center sm:items-start">
-                  <div className="flex gap-0.5">
-                    {/* filled */}
-                   <FiveStars/>
-                  </div>
+                 <FiveStars/>
                 </div>
+                {/*  */}
+                <p> <span className="font-semibold">1.5M</span> happy customers</p>
               </div>
+            </div>
+          </div>
+
+          {/* grid col-1 */}
+          <div className="col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit">
+            <div className="relative md:max-w-xl">
+              {/* only between sm and large will display */}
+              <Image src="/your-image.png" className="absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden" width="200" height="400" alt=""/>
+              <Image src="/line.png" className="absolute w-20 -left-6 -bottom-6 select-none" width="200" height="400" alt=""/>
+              <Phone className="w-64" imgSrc="/testimonials/1.jpg"/>
             </div>
           </div>
         </MaxWidthWrapper>

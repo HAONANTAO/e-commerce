@@ -1,8 +1,10 @@
 import { cn } from '@/lib/utils'
 import React from 'react'
 
-type MaxWidthWrapperProps = {  className?: string,
-  children?: React.ReactNode}
+type MaxWidthWrapperProps = { 
+   className?: string,
+  children?: React.ReactNode
+}
 
 const MaxWidthWrapper = ({className,children}:MaxWidthWrapperProps) => {
   return (
