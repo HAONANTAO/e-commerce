@@ -1,6 +1,9 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Image from "next/image";
-import { Check } from 'lucide-react';
+
+import FiveStars from "@/components/FiveStars";
+import UserImages from "@/components/UserImages";
+import Dotpoints from "@/components/Dotpoints";
 export default function Home() {
   return (
     <>
@@ -34,51 +37,17 @@ export default function Home() {
               </p>
 
               <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
-                <div className="space-y-2">
-                  {/* dot points */}
-                  <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-green-600"/>
-                    Hight-quality, durable material
-                  </li>
-                  <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-green-600"/>
-                    5 years print guarantee
-                  </li>
-                  <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-green-600"/>
-                    Modern iPhone models supported
-                  </li>
-                </div>
-              
+               <Dotpoints/>
               </ul>
 
               <div className="mt-12 flex flex-col sm:flex-row items-center sm:items-start gap-5">
                 {/* negative x space   */}
-                <div className="flex -space-x-4 ">
-                  {/* user images */}
-                   <Image
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
-                    src="/users/user-1.png"
-                    alt="user1"
-                    width={40}
-                    height={40}
-                    />
-                 <Image
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
-                    src="/users/user-2.png"
-                    alt="user2"
-                    width={40}
-                    height={40}
-                    />
-                 
-                    <Image
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
-                    src="/users/user-3.png"
-                    alt="user3"
-                    width={40}
-                    height={40}
-                    />
-
+               <UserImages/>
+                <div className="flex flex-col justify-between items-center sm:items-start">
+                  <div className="flex gap-0.5">
+                    {/* filled */}
+                   <FiveStars/>
+                  </div>
                 </div>
               </div>
             </div>
