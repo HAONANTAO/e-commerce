@@ -33,7 +33,7 @@ export default function Home() {
               </h1>
               {/* max-w-prose--> keep the read friendly 65characters */}
               <p className="mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
-                Capture your favorite memories with your own,<span className="font-semibold">one-of-one</span>Phone case.
+                Capture your favorite memories with your own,<span className="font-semibold">one-of-one </span>Phone case.
                 CaseCobra allows you to protect your memories, not just your phone case.
               </p>
 
@@ -46,10 +46,9 @@ export default function Home() {
                <UserImages/>
                 <div className="flex flex-col justify-between items-center sm:items-start">
                  <FiveStars/>
-                </div>
-                {/*  */}
+             
                 <p> <span className="font-semibold">1.5M</span> happy customers</p>
-              </div>
+              </div> </div>
             </div>
           </div>
 
@@ -57,7 +56,7 @@ export default function Home() {
           <div className="col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit">
             <div className="relative md:max-w-xl">
               {/* only between sm and large will display */}
-              <Image src="/your-image.png" className="absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden" width="200" height="400" alt=""/>
+              <Image src="/your-image.png" className="absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block " width="200" height="400" alt=""/>
               <Image src="/line.png" className="absolute w-20 -left-6 -bottom-6 select-none" width="200" height="400" alt=""/>
               <Phone className="w-64" imgSrc="/testimonials/1.jpg"/>
             </div>
